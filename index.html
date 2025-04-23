@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penawaran Layanan Laundry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#pricing">Harga</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#pickup">Penjemputan</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Selamat Datang di Layanan Laundry Terbaik!</h1>
+        <p>Penawaran laundry terbaik untuk kebersihan pakaian Anda.</p>
+    </section>
+
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <div class="service">
+            <h3>Cuci Setrika</h3>
+            <p>Perawatan pakaian dengan cuci dan setrika untuk hasil maksimal.</p>
+        </div>
+        <div class="service">
+            <h3>Cuci Kering</h3>
+            <p>Layanan cuci tanpa menggunakan air untuk pakaian yang lebih sensitif.</p>
+        </div>
+        <div class="service">
+            <h3>Dry Clean</h3>
+            <p>Cuci dengan teknik dry clean untuk pakaian formal dan mewah.</p>
+        </div>
+        <div class="service">
+            <h3>Cuci Sepatu</h3>
+            <p>Pembersihan sepatu dengan bahan dan metode yang tepat agar tetap awet.</p>
+        </div>
+        <div class="service">
+            <h3>Cuci Karpet</h3>
+            <p>Layanan cuci karpet dengan menggunakan teknologi pembersihan modern.</p>
+        </div>
+        <div class="service">
+            <h3>Cuci Tirai</h3>
+            <p>Cuci tirai dengan cara yang aman dan menjaga kualitas bahan tirai Anda.</p>
+        </div>
+        <div class="service">
+            <h3>Layanan Setrika Saja</h3>
+            <p>Layanan setrika pakaian tanpa dicuci, hanya untuk perawatan pakaian.</p>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Harga Layanan</h2>
+        <table>
+            <tr>
+                <th>Layanan</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>Cuci Setrika</td>
+                <td>Rp. 15.000/kg</td>
+            </tr>
+            <tr>
+                <td>Cuci Kering</td>
+                <td>Rp. 18.000/kg</td>
+            </tr>
+            <tr>
+                <td>Dry Clean</td>
+                <td>Rp. 50.000/item</td>
+            </tr>
+            <tr>
+                <td>Cuci Sepatu</td>
+                <td>Rp. 35.000/pasang</td>
+            </tr>
+            <tr>
+                <td>Cuci Karpet</td>
+                <td>Rp. 80.000/m²</td>
+            </tr>
+            <tr>
+                <td>Cuci Tirai</td>
+                <td>Rp. 45.000/meter</td>
+            </tr>
+            <tr>
+                <td>Layanan Setrika Saja</td>
+                <td>Rp. 10.000/kg</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami langsung melalui WhatsApp untuk informasi lebih lanjut atau pemesanan cepat.</p>
+        <p>
+            <a href="https://wa.me/6285771306728" target="_blank" class="whatsapp-link">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                Chat via WhatsApp: 0812-3456-7890
+            </a>
+        </p>
+    </section>
+     
+    <section id="pickup">
+        <h2>Jadwalkan Penjemputan Pakaian Anda</h2>
+        <p>Isi form di bawah untuk menjadwalkan penjemputan pakaian Anda di lokasi yang Anda tentukan.</p>
+        <form id="pickup-form">
+            <label for="pickup-name">Nama Lengkap:</label>
+            <input type="text" id="pickup-name" name="pickup-name" required>
+
+            <label for="pickup-address">Alamat Penjemputan:</label>
+            <textarea id="pickup-address" name="pickup-address" rows="4" required></textarea>
+
+            <label for="pickup-area">Pilih Area Kurir:</label>
+            <select id="pickup-area" name="pickup-area">
+                <option value="Ciputat">Ciputat</option>
+                <option value="BSD">BSD</option>
+                <option value="Bintaro">Bintaro</option>
+                <option value="Cinere">Cinere</option>
+                <option value="Tangerang">Tangerang</option>
+            </select>
+
+            <label for="pickup-date">Tanggal Penjemputan:</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+
+            <label for="pickup-time">Waktu Penjemputan:</label>
+            <input type="time" id="pickup-time" name="pickup-time" required>
+
+            <button type="submit">Jadwalkan Penjemputan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Website Penawaran Laundry</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
