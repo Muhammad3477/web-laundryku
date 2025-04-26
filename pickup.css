@@ -1,0 +1,87 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+}
+
+#pickup {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    background-color: #2980b9;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #1f5f8b;
+}
+
+/* Loader */
+.loader {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader i {
+    font-size: 5rem;
+    color: #25D366;
+    animation: zoom 1.5s infinite alternate;
+}
+
+.loader p {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #555;
+}
+
+@keyframes zoom {
+    from { transform: scale(1); }
+    to { transform: scale(1.3); }
+}

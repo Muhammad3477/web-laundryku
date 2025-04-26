@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjemputan Laundry</title>
+    <link rel="stylesheet" href="pickup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<script src="js/pickup.js"></script>
+
+<body>
+
+<!-- Pickup Section -->
+<section id="pickup">
+    <h2>Jadwalkan Penjemputan Pakaian Anda</h2>
+    <p>Isi form berikut untuk menjadwalkan penjemputan pakaian di lokasi Anda.</p>
+    <form id="pickup-form">
+        <div class="form-group">
+            <label for="pickup-name">Nama Lengkap:</label>
+            <input type="text" id="pickup-name" name="pickup-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pickup-address">Alamat Penjemputan:</label>
+            <textarea id="pickup-address" name="pickup-address" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="pickup-area">Pilih Area Kurir:</label>
+            <select id="pickup-area" name="pickup-area" required>
+                <option value="">Pilih Area</option>
+                <option value="Ciputat">Ciputat</option>
+                <option value="BSD">BSD</option>
+                <option value="Bintaro">Bintaro</option>
+                <option value="Cinere">Cinere</option>
+                <option value="Tangerang">Tangerang</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pickup-service">Pilih Layanan:</label>
+            <select id="pickup-service" name="pickup-service" required>
+                <option value="">Pilih Layanan</option>
+                <option value="Cuci Setrika">Cuci Setrika</option>
+                <option value="Dry Clean">Dry Clean</option>
+                <option value="Cuci Sepatu">Cuci Sepatu</option>
+                <option value="Cuci Karpet">Cuci Karpet</option>
+                <option value="Cuci Boneka">Cuci Boneka</option>
+                <option value="Fakum Kasur">Fakum Kasur</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pickup-date">Tanggal Penjemputan:</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pickup-time">Waktu Penjemputan:</label>
+            <input type="time" id="pickup-time" name="pickup-time" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Jadwalkan Penjemputan</button>
+    </form>
+</section>
+
+<!-- Loader -->
+<div id="loader" class="loader">
+    <i class="fas fa-motorcycle"></i>
+    <p>Kurir sedang menjemput...</p>
+</div>
+
+<form id="pickup-form">
+
+</body>
+</html>
